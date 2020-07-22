@@ -1,0 +1,13 @@
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.exe
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.deps.json
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.runtimeconfig.json
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.runtimeconfig.dev.json
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.dll
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\bin\Debug\netcoreapp3.1\ConsoleBlackJack.pdb
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.AssemblyInfoInputs.cache
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.AssemblyInfo.cs
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.csproj.CoreCompileInputs.cache
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.dll
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.pdb
+C:\Users\Никита\source\repos\ConsoleBlackJack\ConsoleBlackJack\obj\Debug\netcoreapp3.1\ConsoleBlackJack.genruntimeconfig.cache
