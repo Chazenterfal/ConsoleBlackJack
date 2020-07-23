@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\Никита\OneDrive\Документы\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\Никита\source\repos\ConsoleBlackjack\ConsoleBlackjack\Program.cs" Link="Program.cs" />
   </ItemGroup>
 
 </Project>
