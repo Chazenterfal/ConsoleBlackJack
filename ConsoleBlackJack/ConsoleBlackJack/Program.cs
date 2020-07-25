@@ -47,18 +47,9 @@ namespace ConsoleBlackJack
                 int Card1 = num.Next(2, 11);
                 sum2 = sum2 + Card1;
             }
-            if (sum1 > sum2 && sum1<= 21)
-            {
-                Console.WriteLine($"The banker have {sum2} and it means you won!");
-            }
-            else if (sum1 == sum2)
-            {
-                Console.WriteLine($"The banker have {sum2} and it means you lose!");
-            }
-            else
-            {
-                Console.WriteLine($"The banker have {sum2} and it means you lose!");
-            }
+            string question = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
+            Console.WriteLine(question);
+
         
         }
     }
