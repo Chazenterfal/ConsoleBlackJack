@@ -63,12 +63,13 @@ namespace ConsoleBlackJack
             Random num = new Random();
             for (int i = 1; i<3; i++)
             {
-                int Card1 = num.Next(0, 36);
+                int Card1 = num.Next(0, 35);
                 string Name = Card_names[Card1];
                 if (Cards.ContainsKey(Name))
                 {
                     sum1 = sum1 + Cards[Name];
                     Console.WriteLine($"Card Value - {Name}");
+                    Card_names.RemoveAt(Card1);
                 }
             }
 
@@ -78,13 +79,14 @@ namespace ConsoleBlackJack
                 string S = Console.ReadLine();
                 if (S == "S")
                 {
-                    int Card1 = num.Next(0, 36);
+                    int Card1 = num.Next(0, 35);
                     
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
                         sum1 = sum1 + Cards[Name];
                         Console.WriteLine($"Card Value - {Name}");
+                        Card_names.RemoveAt(Card1);
                     }
                 }
                 else
@@ -95,11 +97,12 @@ namespace ConsoleBlackJack
             int sum2 = 0;
             for (int i = 1; i<3; i++)
                 {
-                    int Card1 = num.Next(0, 36);
+                    int Card1 = num.Next(0, 35);
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
                         sum2 = sum2 + Cards[Name];
+                        Card_names.RemoveAt(Card1);
                     }
                 }
 
@@ -108,7 +111,8 @@ namespace ConsoleBlackJack
                 raz -= 1;
                 int Card1 = num.Next(0, 36);
                 string Name = Card_names[Card1];
-                sum2 = sum2 + Card1;
+                sum2 = sum2 + Cards[Name];
+                Card_names.RemoveAt(Card1);
             }
             string question = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
             Console.WriteLine(question);
