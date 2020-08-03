@@ -76,7 +76,7 @@ namespace ConsoleBlackJack
             }
             while (EXIT != 1)
             {
-                Console.WriteLine("Write S for cards, else write Y.");
+                Console.WriteLine("Press F for cards, else press Enter.");
                 string S = Console.ReadLine();
                 if (S == "S")
                 {
