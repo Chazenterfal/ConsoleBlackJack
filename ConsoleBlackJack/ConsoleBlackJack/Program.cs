@@ -109,9 +109,8 @@ namespace ConsoleBlackJack
                     }
                 }
             string Winner = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
-            Console.WriteLine(Winner);
-
-        
+            Console.WriteLine($"{Winner} Press Enter for finish program.");
+            Console.ReadLine();
         }
     }
 }
