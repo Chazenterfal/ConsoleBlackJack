@@ -7,7 +7,7 @@ namespace ConsoleBlackJack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Simple Blackjack - Welcome! Write 'S' for start. (Any other key for quit)");
+            Console.WriteLine("Simple Blackjack - Welcome! Press Enter for start. ");
             List<string> Card_names = new List<string>() { "Diamonds Jack", "Clubs Jack", "Hearts Jack", "Spades Jack", "Diamonds Dame", "Clubs Dame", "Hearts Dame", "Spades Dame", "Diamonds King", "Clubs King", "Hearts King", "Spades King", "Diamonds Six", "Clubs Six", "Hearts Six", "Spades Six", "Diamonds Seven", "Clubs Seven", "Hearts Seven", "Spades Seven", "Diamonds Eight", "Clubs Eight", "Hearts Eight", "Spades Eight", "Diamonds Nine", "Clubs Nine", "Hearts Nine", "Spades Nine", "Diamonds Ten", "Clubs Ten", "Hearts Ten", "Spades Ten", "Diamonds Ace", "Clubs Ace", "Hearts Ace", "Spades Ace" };
             Dictionary<string, int> Cards = new Dictionary<string, int>()
             {
@@ -56,37 +56,39 @@ namespace ConsoleBlackJack
                 {"Hearts Ace", 11 },
                 {"Spades Ace", 11 },
             };
-            string s = Console.ReadLine();
+            Console.ReadLine();
+            int max_index = 35;
             int raz = 0;
             int EXIT = 0;
             int sum1 = 0;
             Random num = new Random();
             for (int i = 1; i<3; i++)
             {
-                int Card1 = num.Next(0, 35);
+                int Card1 = num.Next(0, max_index);
                 string Name = Card_names[Card1];
                 if (Cards.ContainsKey(Name))
                 {
-                    sum1 = sum1 + Cards[Name];
+                    sum1 += Cards[Name];
                     Console.WriteLine($"Card Value - {Name}");
                     Card_names.RemoveAt(Card1);
+                    max_index -= 1;
                 }
             }
-
             while (EXIT != 1)
             {
                 Console.WriteLine("Write S for cards, else write Y.");
                 string S = Console.ReadLine();
                 if (S == "S")
                 {
-                    int Card1 = num.Next(0, 35);
+                    int Card1 = num.Next(0, max_index);
                     
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
-                        sum1 = sum1 + Cards[Name];
+                        sum1 += Cards[Name];
                         Console.WriteLine($"Card Value - {Name}");
                         Card_names.RemoveAt(Card1);
+                        max_index -= 1;
                     }
                 }
                 else
@@ -95,27 +97,19 @@ namespace ConsoleBlackJack
                 }
             }
             int sum2 = 0;
-            for (int i = 1; i<3; i++)
+            for (int i = 1; i<3+raz; i++)
                 {
-                    int Card1 = num.Next(0, 35);
+                    int Card1 = num.Next(0, max_index);
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
-                        sum2 = sum2 + Cards[Name];
+                        sum2 += Cards[Name];
                         Card_names.RemoveAt(Card1);
+                        max_index -= 1;
                     }
                 }
-
-            while (raz != 0)
-            {
-                raz -= 1;
-                int Card1 = num.Next(0, 36);
-                string Name = Card_names[Card1];
-                sum2 = sum2 + Cards[Name];
-                Card_names.RemoveAt(Card1);
-            }
-            string question = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
-            Console.WriteLine(question);
+            string Winner = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
+            Console.WriteLine(Winner);
 
         
         }
