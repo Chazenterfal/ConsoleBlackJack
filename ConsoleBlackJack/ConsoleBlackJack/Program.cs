@@ -9,7 +9,7 @@ namespace ConsoleBlackJack
         {
             Console.WriteLine("Simple Blackjack - Welcome! Press Enter for start. ");
             List<string> Card_names = new List<string>() { "Diamonds Jack", "Clubs Jack", "Hearts Jack", "Spades Jack", "Diamonds Dame", "Clubs Dame", "Hearts Dame", "Spades Dame", "Diamonds King", "Clubs King", "Hearts King", "Spades King", "Diamonds Six", "Clubs Six", "Hearts Six", "Spades Six", "Diamonds Seven", "Clubs Seven", "Hearts Seven", "Spades Seven", "Diamonds Eight", "Clubs Eight", "Hearts Eight", "Spades Eight", "Diamonds Nine", "Clubs Nine", "Hearts Nine", "Spades Nine", "Diamonds Ten", "Clubs Ten", "Hearts Ten", "Spades Ten", "Diamonds Ace", "Clubs Ace", "Hearts Ace", "Spades Ace" };
-            Dictionary<string, int> Cards = new Dictionary<string, int>()
+            Dictionary<string, byte> Cards = new Dictionary<string, byte>()
             {
                 {"Diamonds Jack", 2 },
                 {"Clubs Jack", 2 },
@@ -57,12 +57,12 @@ namespace ConsoleBlackJack
                 {"Spades Ace", 11 },
             };
             Console.ReadLine();
-            int max_index = 35;
-            int raz = 0;
-            int EXIT = 0;
-            int sum1 = 0;
+            byte max_index = 35;
+            byte raz = 3;
+            byte EXIT = 0;
+            byte sum1 = 0;
             Random num = new Random();
-            for (int i = 1; i<3; i++)
+            for (byte i = 1; i<3; i++)
             {
                 int Card1 = num.Next(0, max_index);
                 string Name = Card_names[Card1];
@@ -81,7 +81,6 @@ namespace ConsoleBlackJack
                 if (S == "S")
                 {
                     int Card1 = num.Next(0, max_index);
-                    
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
@@ -96,8 +95,8 @@ namespace ConsoleBlackJack
                     EXIT = 1;
                 }
             }
-            int sum2 = 0;
-            for (int i = 1; i<3+raz; i++)
+            byte sum2 = 0;
+            for (byte i = 1; i<raz; i++)
                 {
                     int Card1 = num.Next(0, max_index);
                     string Name = Card_names[Card1];
