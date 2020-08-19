@@ -62,7 +62,7 @@ namespace ConsoleBlackJack
             byte EXIT = 0;
             byte sum1 = 0;
             Random num = new Random();
-            for (byte i = 1; i<3; i++)
+            for (byte i = 1; i < 3; i++)
             {
                 int Card1 = num.Next(0, max_index);
                 string Name = Card_names[Card1];
@@ -96,17 +96,17 @@ namespace ConsoleBlackJack
                 }
             }
             byte sum2 = 0;
-            for (byte i = 1; i<raz; i++)
+            for (byte i = 1; i < raz; i++)
+            {
+                int Card1 = num.Next(0, max_index);
+                string Name = Card_names[Card1];
+                if (Cards.ContainsKey(Name))
                 {
-                    int Card1 = num.Next(0, max_index);
-                    string Name = Card_names[Card1];
-                    if (Cards.ContainsKey(Name))
-                    {
-                        sum2 += Cards[Name];
-                        Card_names.RemoveAt(Card1);
-                        max_index -= 1;
-                    }
+                    sum2 += Cards[Name];
+                    Card_names.RemoveAt(Card1);
+                    max_index -= 1;
                 }
+            }
             string Winner = (sum1 > sum2 && sum1 <= 21) ? $"The banker have {sum2} and it means you won!" : $"The banker have {sum2} and it means you lose!";
             Console.WriteLine($"{Winner} Press Enter for finish program.");
             Console.ReadLine();
