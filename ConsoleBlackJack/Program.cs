@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleBlackJack
+namespace ConsoleBlackjack
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Simple Blackjack - Welcome! Press Enter for start. ");
+            Console.WriteLine("\n =-=-=-=-=-=-=-=-=-=- \n Welcome to Console Blackjack! Press Enter for start first player's turn. \n =-=-=-=-=-=-=-=-=-=-");
             List<string> Card_names = new List<string>() { "Diamonds Jack", "Clubs Jack", "Hearts Jack", "Spades Jack", "Diamonds Dame", "Clubs Dame", "Hearts Dame", "Spades Dame", "Diamonds King", "Clubs King", "Hearts King", "Spades King", "Diamonds Six", "Clubs Six", "Hearts Six", "Spades Six", "Diamonds Seven", "Clubs Seven", "Hearts Seven", "Spades Seven", "Diamonds Eight", "Clubs Eight", "Hearts Eight", "Spades Eight", "Diamonds Nine", "Clubs Nine", "Hearts Nine", "Spades Nine", "Diamonds Ten", "Clubs Ten", "Hearts Ten", "Spades Ten", "Diamonds Ace", "Clubs Ace", "Hearts Ace", "Spades Ace" };
             Dictionary<string, byte> Cards = new Dictionary<string, byte>()
             {
@@ -69,23 +69,23 @@ namespace ConsoleBlackJack
                 if (Cards.ContainsKey(Name))
                 {
                     sum1 += Cards[Name];
-                    Console.WriteLine($"Card Value - {Name}");
+                    Console.WriteLine($" Card Value - {Name}");
                     Card_names.RemoveAt(Card1);
                     max_index -= 1;
                 }
             }
             while (EXIT != 1)
             {
-                Console.WriteLine("Press F for cards, else press Enter.");
+                Console.WriteLine(" \n =-=-=-=-=-=-=-=-=-=- \n Press F for cards, else press Enter. \n =-=-=-=-=-=-=-=-=-=-");
                 string S = Console.ReadLine();
-                if (S == "S")
+                if (S == "F")
                 {
                     int Card1 = num.Next(0, max_index);
                     string Name = Card_names[Card1];
                     if (Cards.ContainsKey(Name))
                     {
                         sum1 += Cards[Name];
-                        Console.WriteLine($"Card Value - {Name}");
+                        Console.WriteLine($" Card Value - {Name}");
                         Card_names.RemoveAt(Card1);
                         max_index -= 1;
                     }

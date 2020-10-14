@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "ConsoleBlackJack/1.0.0": {
+      "ConsoleBlackjack/1.0.0": {
         "runtime": {
-          "ConsoleBlackJack.dll": {}
+          "ConsoleBlackjack.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ConsoleBlackJack/1.0.0": {
+    "ConsoleBlackjack/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

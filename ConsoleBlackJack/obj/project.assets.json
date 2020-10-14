@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Никита\\.nuget\\packages\\": {}
+    "C:\\Users\\nikit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Никита\\source\\repos\\ConsoleBlackJack\\ConsoleBlackJack\\ConsoleBlackJack.csproj",
-      "projectName": "ConsoleBlackJack",
-      "projectPath": "C:\\Users\\Никита\\source\\repos\\ConsoleBlackJack\\ConsoleBlackJack\\ConsoleBlackJack.csproj",
-      "packagesPath": "C:\\Users\\Никита\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Никита\\source\\repos\\ConsoleBlackJack\\ConsoleBlackJack\\obj\\",
+      "projectUniqueName": "C:\\Users\\nikit\\source\\repos\\ConsoleBlackjack\\ConsoleBlackjack.csproj",
+      "projectName": "ConsoleBlackjack",
+      "projectPath": "C:\\Users\\nikit\\source\\repos\\ConsoleBlackjack\\ConsoleBlackjack.csproj",
+      "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikit\\source\\repos\\ConsoleBlackjack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Никита\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
